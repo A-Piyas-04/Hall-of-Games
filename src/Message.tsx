@@ -1,9 +1,14 @@
-function Messege (){
-   let messege = [<h1>Hell oWo rld !</h1>];
-   let messege2 = [<h2>Hell oWo rld !</h2>];
-   let messege3 = [<h3>Hell oWo rld !</h3>];
-return messege;
-return messege2;
-return messege3;
+function Message() {
+
+   const earth= 'Midgard';
+
+   return (
+    <div>
+      <h1>Hello {earth} !</h1>
+      <h2>Hello {earth} !</h2>
+      <h3>Hello {earth} !</h3>
+    </div>
+  );
 }
-export default Messege;
+
+export default Message;
