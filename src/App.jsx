@@ -1,15 +1,25 @@
-import ListGroup from "./components/ListGroup";
+import GameCard from "./components/GameCard";
+import "./app.css";
+
 function App() {
   return (
-    <div className="container mt-5">
-      <div className="row justify-content-center">
-        <div className="col-md-8">
+    <>
+     
+      <GameCard game={{
+        poster: "/images/RE2 Remake.jpg",
+        title: "Resident Evil 2 Remake",
+        genre: "Horror Survival(Puzzle,Shooter)",
+        releaseYear: 2019,
+      }} />
 
-          <ListGroup YourMetal={"Starkenium"} />
-        
-        </div>
-      </div>
-    </div>
+<GameCard game={{
+        poster: "/images/mario.jpg",
+        title: "Resident Evil 2 Remake",
+        genre: "Horror Survival(Puzzle,Shooter)",
+        releaseYear: 2019,
+      }} />
+
+    </>
   );
 }
 
