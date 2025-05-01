@@ -1,10 +1,11 @@
-function ListGroup() {
+function ListGroup( {YourMetal} ) {
     let Metals = [
         'Titanium',
         'Vibranium',
         'Adamantium',
         'Uru',
-        'Underwater-Vibranium'
+        'Underwater-Vibranium',
+        YourMetal
     ];
 
 
@@ -24,7 +25,9 @@ function ListGroup() {
             <ul className="list-group">
                 {Metals.map((item) => (
                     <li key={item} className="list-group-item">{item}</li>
-                ))}
+                ))
+                }
+                {/* <li className="your-Custom-Metal"> {YourMetal}</li> */}
             </ul>
         </>
     );
