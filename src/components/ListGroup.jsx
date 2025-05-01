@@ -27,7 +27,7 @@ function ListGroup( {YourMetal} ) {
                     <li key={item} className="list-group-item">{item}</li>
                 ))
                 }
-                {/* <li className="your-Custom-Metal"> {YourMetal}</li> */}
+
             </ul>
         </>
     );
