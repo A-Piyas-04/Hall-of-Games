@@ -6,7 +6,7 @@ function ListGroup() {
         'Uru',
         'Underwater-Vibranium'
     ];
-    Metals = [];
+
 
     if (Metals.length === 0) {
         return (
@@ -22,7 +22,8 @@ function ListGroup() {
         <>
             <h1> List of Metals </h1>
             <ul className="list-group">
-                {Metals.map((item) => (<li key={item}> {item} </li>
+                {Metals.map((item) => (
+                    <li key={item} className="list-group-item">{item}</li>
                 ))}
             </ul>
         </>
