@@ -21,7 +21,7 @@ function App() {
       <GameCard game={{
         poster: "/images/RE4 Remake.jpg",
         title: "Resident Evil 4 Remake",
-        genre: "Horror Survival | Action",
+        genre: "Horror Survival | Action,Shooter,Puzzle",
         releaseYear: 2023,
       }} />
 
