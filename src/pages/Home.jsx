@@ -64,7 +64,8 @@ function Home() {
 
             <div className="game-grid">
                 {games.map((game) => (
-                    
+                    game.title.toLowerCase().startsWith(searchQuery.toLowerCase())
+                    &&
                     <GameCard key={game.id} game={game} />
                 ))}
             </div>
