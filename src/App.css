@@ -56,11 +56,39 @@ body::before {
 }
 
 /* Layout adjustments */
-#root {
-  display: flex;
-  flex-wrap: wrap;
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 2rem;
-  justify-content: center;
-  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.game-card {
+  aspect-ratio: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-poster {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.game-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
 }
