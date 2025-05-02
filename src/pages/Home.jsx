@@ -1,9 +1,12 @@
 import GameCard from "../components/GameCard";
 
-const handleSearch = (e) => {
-    e.preventDefault();
-    const searchTerm = e.target[0].value;
-    console.log("Searching for:", searchTerm);
+function handleSearch(event) {
+    event.preventDefault();
+    const searchTerm = event.target.value.toLowerCase();
+    const filteredGames = games.filter((game) =>
+        game.title.toLowerCase().includes(searchTerm)
+    );
+    setGames(filteredGames);
 }
 
 
@@ -48,8 +51,8 @@ function Home() {
 
             <form className="search-form" onSubmit={handleSearch}>
                 <input
-                    type="text"
                     className="search-input"
+                    type="text"
                     placeholder="Search for games..."
                 />
             </form>
