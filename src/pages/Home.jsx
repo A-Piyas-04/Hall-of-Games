@@ -1,16 +1,12 @@
 import GameCard from "../components/GameCard";
+import { useState } from "react";
 
-function handleSearch(event) {
-    event.preventDefault();
-    const searchTerm = event.target.value.toLowerCase();
-    const filteredGames = games.filter((game) =>
-        game.title.toLowerCase().includes(searchTerm)
-    );
-    setGames(filteredGames);
-}
 
 
 function Home() {
+
+    const [searchQuery, setSearchQuery] = useState("");
+
     const games = [
         {
             id: 1,
@@ -22,7 +18,7 @@ function Home() {
         {
             id: 2,
             poster: "/images/POP WW.jpg",
-            title: "Princess of Persia: Warrior Within",
+            title: "Prince of Persia: Warrior Within",
             genre: "Action Adventure",
             releaseYear: 2004
         },
@@ -42,7 +38,11 @@ function Home() {
         }
     ]
 
-
+    const handleSearch = (e) => {
+        e.preventDefault();
+        // Perform search logic here
+        alert("Search query: " + searchQuery);
+    };
     return (
 
 
@@ -54,11 +54,17 @@ function Home() {
                     className="search-input"
                     type="text"
                     placeholder="Search for games..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
                 />
+                <button className="search-button" type="submit">
+                    Search
+                </button>
             </form>
 
             <div className="game-grid">
                 {games.map((game) => (
+                    
                     <GameCard key={game.id} game={game} />
                 ))}
             </div>
