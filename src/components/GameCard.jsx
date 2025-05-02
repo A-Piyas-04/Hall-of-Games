@@ -1,7 +1,7 @@
 function GameCard({ game }) {
 
     function handleFavoriteClick() {
-        alert('Added as a favorite');
+        alert('Added to Wishlist');
     }
 
     return (
@@ -11,7 +11,7 @@ function GameCard({ game }) {
                 <img src={game.poster} alt={game.title} />
             </div>
             <div className="game-overlay">
-                <button className="favorite-btn" onClick={handleFavoriteClick}>
+                <button className="wishlist-btn" onClick={handleFavoriteClick}>
                     💙
                 </button>
             </div>
