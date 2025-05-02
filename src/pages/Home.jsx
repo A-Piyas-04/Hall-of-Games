@@ -1,5 +1,12 @@
 import GameCard from "../components/GameCard";
 
+const handleSearch = (e) => {
+    e.preventDefault();
+    const searchTerm = e.target[0].value;
+    console.log("Searching for:", searchTerm);
+}
+
+
 function Home() {
     const games = [
         {
@@ -32,8 +39,21 @@ function Home() {
         }
     ]
 
+
     return (
+
+
         <div className="Home">
+
+
+            <form className="search-form" onSubmit={handleSearch}>
+                <input
+                    type="text"
+                    className="search-input"
+                    placeholder="Search for games..."
+                />
+            </form>
+
             <div className="game-grid">
                 {games.map((game) => (
                     <GameCard key={game.id} game={game} />
