@@ -1,12 +1,18 @@
 import GameCard from "./components/GameCard";
 import "./app.css";
 import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
+import Wishlist from "./pages/Wishlist";
+
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <main className="main-content">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Wishlist" element={<Wishlist />} />
+      </Routes>
+    </main>
   );
 }
 
