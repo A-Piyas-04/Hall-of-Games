@@ -1,3 +1,5 @@
+import GameCard from "../components/GameCard";
+
 function Home() {
     const games = [
         {
@@ -31,10 +33,12 @@ function Home() {
     ]
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {games.map((game) => (
-                <GameCard key={game.id} game={game} />
-            ))}
+        <div className="Home">
+            <div className="game-grid">
+                {games.map((game) => (
+                    <GameCard key={game.id} game={game} />
+                ))}
+            </div>
         </div>
     )
 }
