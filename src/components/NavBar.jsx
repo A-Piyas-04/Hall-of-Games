@@ -1,8 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 
 function NavBar() {
-    const location = useLocation();
-
     return (
         <nav className="navbar">
             <div className="container">
@@ -13,13 +11,13 @@ function NavBar() {
                 <div className="nav-links">
                     <Link 
                         to="/" 
-                        className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+                        className="nav-link"
                     >
                         Home
                     </Link>
                     <Link 
                         to="/Wishlist"
-                        className={`nav-link ${location.pathname === '/Wishlist' ? 'active' : ''}`}
+                        className="nav-link"
                     >
                         Wishlist
                     </Link>
