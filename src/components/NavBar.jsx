@@ -5,9 +5,6 @@ function NavBar() {
         <nav className="navbar">
             <div className="container">
                 <Link to="/" className="brand">Hall of Games</Link>
-                <button className="nav-toggle" aria-label="toggle navigation">
-                    <span className="hamburger"></span>
-                </button>
                 <div className="nav-links">
                     <Link 
                         to="/" 
