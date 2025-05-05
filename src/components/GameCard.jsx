@@ -14,7 +14,7 @@ function GameCard({ game }) {
             </div>
             <div className="game-overlay">
                 <button className="wishlist-btn" onClick={handleFavoriteClick}>
-                    💙
+                    ❤️
                 </button>
             </div>
 

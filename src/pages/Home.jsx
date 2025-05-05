@@ -11,7 +11,7 @@ function Home() {
     const games = [
         {
             id: 1,
-            poster: "/images/RE2 Remake.jpg",
+            poster: './images/RE2 Remake.jpg',
             title: "Resident Evil 2 Remake",
             genre: "Horror Survival | (Puzzle,Shooter)",
             releaseYear: 2019
