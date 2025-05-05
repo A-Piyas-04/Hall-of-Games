@@ -1,0 +1,58 @@
+/* NavBar.css - Styling for navigation bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0f0f1b;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4cc9f0;
+  text-decoration: none;
+  text-shadow: 0 0 10px rgba(76, 201, 240, 0.5);
+  transition: all 0.3s ease;
+}
+
+.brand:hover {
+  color: #f72585;
+  text-shadow: 0 0 15px rgba(247, 37, 133, 0.7);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(76, 201, 240, 0.2);
+  color: #4cc9f0;
+}
+
+.nav-link.active {
+  background-color: rgba(76, 201, 240, 0.3);
+  color: #4cc9f0;
+  font-weight: bold;
+}
