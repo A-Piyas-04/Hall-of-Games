@@ -1,3 +1,5 @@
+import '../css/Wishlist.css';
+
 function Wishlist() {
 
     return (
