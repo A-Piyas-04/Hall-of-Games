@@ -12,6 +12,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Wishlist" element={<Wishlist />} />
+          {/* <Route path="/" element={<Wishlist />} />
+          <Route path="/homeeeeee" element={<Home />} /> */}
         </Routes>
       </main>
     </>
