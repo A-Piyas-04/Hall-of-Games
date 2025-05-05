@@ -67,3 +67,55 @@
   text-align: center;
   text-shadow: 0 0 10px rgba(76, 201, 240, 0.3);
 }
+
+/* New styles for API integration */
+.loading, 
+.error-message, 
+.no-more-games, 
+.no-games-found {
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.loading {
+  color: #4cc9f0;
+}
+
+.error-message {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #ff4d4d;
+}
+
+.no-more-games,
+.no-games-found {
+  color: #f72585;
+}
+
+.load-more-button {
+  display: block;
+  margin: 30px auto;
+  background-color: #4cc9f0;
+  color: #0f0f1b;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.load-more-button:hover {
+  background-color: #f72585;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.load-more-button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+  transform: none;
+}
